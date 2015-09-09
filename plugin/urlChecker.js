@@ -32,3 +32,13 @@ function preview() {
 }
 
 //setTimeout(preview, 5000);
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+  if (request.action == "inject") {
+    preview();
+    console.log("Injection succeeed");
+    //sendResponse({res: "Injection succeeed"});
+  } else {
+    //sendResponse({res: "Injection failed"});
+    console.log("Injection failed");
+  }
+});
