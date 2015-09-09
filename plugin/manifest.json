@@ -7,8 +7,8 @@
 
   "content_scripts": [{
       "js": [ "jquery.min.js", "urlChecker.js" ],
-      "matches":  [   "https://app.intercom.io/a/apps/*"
-      ]
+      "matches":  ["https://app.intercom.io/a/apps/*"],
+      "run_at": "document_end"
   }],
 
   "browser_action": {
