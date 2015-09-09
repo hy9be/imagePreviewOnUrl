@@ -31,4 +31,4 @@ function preview() {
   });
 }
 
-setTimeout(preview, 5000);
+//setTimeout(preview, 5000);
