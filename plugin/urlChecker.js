@@ -12,7 +12,7 @@ $(".ember-view.m__activity-feed__event-metadata__item .t__light-text").each(func
           // Display the image
           $(this).mouseenter(function() {
             $(body).append( $("<div style='top: 0; left: 0; width: 240px; height: 240px; position: fixed;'><img style='margin: 10px; width: 220px; height: 220px;' src='"
-            + “http://pbs.twimg.com/media/” + val + "' /></div>") );
+            + "http://pbs.twimg.com/media/" + val + "' /></div>") );
           });
         }
       });
