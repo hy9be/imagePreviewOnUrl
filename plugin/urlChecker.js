@@ -5,7 +5,7 @@ if(!('contains' in String.prototype)) {
 }
 
 function preview() {
-  $(".ember-view.m__activity-feed__event-metadata__item .t__light-text").each(function(index, element) {
+  $(".activity-feed__event-metadata__item .t__light-text").each(function(index, element) {
       if ($(this).text().contains("Tile info:")) {
         var textDiv = $(this)
 
@@ -21,7 +21,7 @@ function preview() {
               imgUrl = segs[0] + ":" + segs[1];
             }
 
-            textDiv.mouseenter(function() {
+            textDiv.click(function() {
               $("body").append( $("<div style='background: #fff; top: 0; left: 0; width: 240px; height: 240px; position: fixed;'><img style='margin: 10px; width: 220px; height: 220px;' src='"
                + imgUrl + "' /></div>") );
             });
